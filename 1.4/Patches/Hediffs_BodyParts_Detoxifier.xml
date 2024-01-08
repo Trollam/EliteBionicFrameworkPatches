@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch MayRequire="Ludeon.RimWorld.Biotech">
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/HediffDef[defName="DetoxifierLung" or defName="DetoxifierKidney"][not(comps)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/HediffDef[defName="DetoxifierLung" or defName="DetoxifierKidney"][not(comps)]</xpath>
+      <value>
+        <comps />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="DetoxifierLung" or defName="DetoxifierKidney"]/comps</xpath>
+    <value>
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+        <scaleAdjustment>0.25</scaleAdjustment>
+      </li>
+    </value>
+  </Operation>
+</Patch>

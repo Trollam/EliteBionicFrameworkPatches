@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/HediffDef[defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="BionicSpine" or defName="BionicHeart" or defName="BionicStomach" or defName="BionicEar" or defName="BionicTongue"][not(comps)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/HediffDef[defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="BionicSpine" or defName="BionicHeart" or defName="BionicStomach" or defName="BionicEar" or defName="BionicTongue"][not(comps)]</xpath>
+      <value>
+        <comps />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="BionicEye" or defName="BionicArm" or defName="BionicLeg" or defName="BionicSpine" or defName="BionicHeart" or defName="BionicStomach" or defName="BionicEar" or defName="BionicTongue"]/comps</xpath>
+    <value>
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+        <scaleAdjustment>0.25</scaleAdjustment>
+      </li>
+    </value>
+  </Operation>
+</Patch>
