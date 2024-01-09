@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<Patch MayRequire="Ludeon.RimWorld.Biotech">
+<Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/HediffDef[defName="DetoxifierLung" or defName="DetoxifierKidney"][not(comps)]</xpath>
     <match Class="PatchOperationAdd">

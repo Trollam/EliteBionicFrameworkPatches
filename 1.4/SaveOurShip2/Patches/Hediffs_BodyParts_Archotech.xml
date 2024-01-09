@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/HediffDef[defName="SoSArchotechEar" or defName="SoSArchotechNose" or defName="SoSArchotechHeart" or defName="SoSArchotechLung" or defName="SoSArchotechStomach" or defName="SoSArchotechKidney" or defName="SoSArchotechLiver" or defName="SoSArchotechSpine" or defName="SoSArchotechSkin" or defName="SoSArchotechSkin"][not(comps)]</xpath>
+    <match Class="PatchOperationAdd">
+      <xpath>Defs/HediffDef[defName="SoSArchotechEar" or defName="SoSArchotechNose" or defName="SoSArchotechHeart" or defName="SoSArchotechLung" or defName="SoSArchotechStomach" or defName="SoSArchotechKidney" or defName="SoSArchotechLiver" or defName="SoSArchotechSpine" or defName="SoSArchotechSkin" or defName="SoSArchotechSkin"][not(comps)]</xpath>
+      <value>
+        <comps />
+      </value>
+    </match>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/HediffDef[defName="SoSArchotechEar" or defName="SoSArchotechNose" or defName="SoSArchotechHeart" or defName="SoSArchotechLung" or defName="SoSArchotechStomach" or defName="SoSArchotechKidney" or defName="SoSArchotechLiver" or defName="SoSArchotechSpine" or defName="SoSArchotechSkin" or defName="SoSArchotechSkin"]/comps</xpath>
+    <value>
+      <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+        <scaleAdjustment>0.5</scaleAdjustment>
+      </li>
+    </value>
+  </Operation>
+</Patch>

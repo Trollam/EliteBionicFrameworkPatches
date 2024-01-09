@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<Patch MayRequire="Ludeon.RimWorld.Royalty">
+<Patch>
   <Operation Class="PatchOperationConditional">
     <xpath>Defs/HediffDef[defName="ToughskinGland" or defName="ArmorskinGland" or defName="StoneskinGland" or defName="AestheticNose" or defName="DetoxifierStomach" or defName="ReprocessorStomach" or defName="NuclearStomach"][not(comps)]</xpath>
     <match Class="PatchOperationAdd">
