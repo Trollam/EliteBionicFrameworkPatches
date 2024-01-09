@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<loadFolders>
+<loadFolders xmlns="rimworld.schemas.loadFolders">
   <v1.4>
     <li>/</li>
     <li>1.4/Core</li>
