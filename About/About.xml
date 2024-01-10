@@ -24,9 +24,7 @@
   </modDependencies>
   <loadAfter>
     <li>Ludeon.RimWorld</li>
-  </loadAfter>
-  <forceLoadAfter>
     <li>V1024.EBFramework</li>
     <li>kentington.saveourship2</li>
-  </forceLoadAfter>
+  </loadAfter>
 </ModMetaData>
